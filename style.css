@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black; 
+    color: aqua; 
+    
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste conforme necessário */
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size:45px; /* Ajuste o tamanho conforme necessário */
+    padding: 20px;
+    
+}
+
+.gif-animation {
+    margin-left: 300px;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    background: url('giphy.gif') no-repeat center center;
+    background-size: cover;
+    animation: pikachu 1s infinite;
+}
+
+@keyframes pikachu {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#playButton {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#myAudio {
+    display: none;
+}
